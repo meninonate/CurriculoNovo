@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nathan de Souza Albino da Silva | Currículo</title>
+    <meta name="description" content="Currículo de Nathan de Souza Albino da Silva: estudante de Análise e Desenvolvimento de Sistemas, formado em Comunicação Visual, estagiário em SEO e Inbound de E-commerce.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #ffffff;
+            --ink: #000000;
+            --muted: #000000;
+            --accent: #0b2a6f;
+            --line: #000000;
+            --card: #ffffff;
+        }
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            margin: 0;
+            font-family: "Nunito Sans", Arial, sans-serif;
+            background: var(--bg);
+            color: var(--ink);
+            line-height: 1.6;
+        }
+        h1, h2, h3, .hero p.role { font-family: "Montserrat", "Nunito Sans", Arial, sans-serif; }
+        a { color: inherit; }
+        a:focus-visible, .btn:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+
+        .wrap { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
+
+        /* Topo */
+        nav { display: flex; justify-content: flex-end; gap: 24px; padding: 20px 0; font-weight: 600; }
+        nav a { text-decoration: none; color: var(--ink); }
+        nav a:hover { color: var(--accent); }
+
+        /* Hero */
+        .hero {
+            display: grid;
+            grid-template-columns: 1.3fr 1fr;
+            gap: 56px;
+            align-items: center;
+            padding: 48px 0 88px;
+        }
+        .hero h1 {
+            font-size: clamp(2.2rem, 6vw, 4rem);
+            line-height: 1;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin: 0 0 20px;
+        }
+        .hero p.role { font-size: 1.15rem; font-weight: 400; color: var(--ink); max-width: 32ch; margin: 0 0 12px; }
+        .hero p.about { margin: 0 0 32px; font-weight: 600; color: var(--accent); }
+        .actions { display: flex; flex-wrap: wrap; gap: 12px; }
+        .btn {
+            display: inline-block;
+            padding: 14px 22px;
+            border-radius: 8px;
+            font-weight: 700;
+            text-decoration: none;
+            border: 2px solid var(--ink);
+        }
+        .btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+        .btn.primary:hover { filter: brightness(1.15); }
+
+        .photo { position: relative; justify-self: center; width: min(100%, 340px); }
+        .photo::before {
+            content: "";
+            position: absolute;
+            inset: 20px -20px -20px 20px;
+            background: var(--accent);
+            border-radius: 12px;
+        }
+        .photo img {
+            position: relative;
+            display: block;
+            width: 100%;
+            aspect-ratio: 4 / 5;
+            object-fit: cover;
+            object-position: 40% 20%;
+            border-radius: 12px;
+        }
+
+        /* Seções */
+        section { padding: 56px 0; border-top: 2px solid var(--line); }
+        .section-grid { display: grid; grid-template-columns: 220px 1fr; gap: 40px; }
+        h2 { margin: 0; font-size: 1.4rem; font-weight: 700; color: var(--accent); }
+        .entries { display: grid; gap: 36px; }
+        .item h3 { margin: 0 0 4px; font-size: 1.2rem; font-weight: 600; }
+        .item .meta { color: var(--ink); margin: 0 0 12px; }
+        .item .meta strong { font-weight: 700; }
+        .item .meta .period { color: var(--accent); font-weight: 600; }
+        .item p:last-child, .item ul:last-child { margin-bottom: 0; }
+        .item p, .item ul { max-width: 62ch; }
+        .item ul { margin: 0; padding-left: 20px; }
+        .item li { margin-bottom: 6px; }
+        .item .sub { margin-bottom: 20px; }
+        .item .sub:last-child { margin-bottom: 0; }
+        .item .sub .meta { margin-bottom: 8px; font-weight: 600; }
+        .item li::marker { color: var(--accent); }
+
+        .contact-list { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 12px 48px; }
+        .contact-list span { color: var(--ink); display: inline-block; margin-right: 12px; }
+        .contact-list a { font-weight: 600; text-decoration-color: var(--accent); text-underline-offset: 4px; }
+        .contact-list a:hover { color: var(--accent); }
+
+        footer { padding: 48px 0; border-top: 2px solid var(--line); }
+        footer h2 { margin-bottom: 20px; }
+        footer .copy { margin: 32px 0 0; color: var(--ink); font-size: 0.9rem; }
+
+        @media (max-width: 760px) {
+            .hero { grid-template-columns: 1fr; gap: 48px; padding-bottom: 64px; }
+            .photo { order: -1; width: min(80%, 280px); margin-right: 20px; }
+            .section-grid { grid-template-columns: 1fr; gap: 16px; }
+        }
+        @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <nav aria-label="Navegação principal">
+            <a href="#experiencia">Experiência</a>
+            <a href="#formacao">Formação</a>
+            <a href="#contato">Contato</a>
+        </nav>
+
+        <header class="hero">
+            <div>
+                <h1>Nathan de Souza Albino da Silva</h1>
+                <p class="role">Estudante de programação e comunicação visual. Unindo código, imagem e SEO.</p>
+                <p class="about">21 anos · Brasileiro · Palhoça/SC</p>
+                <div class="actions">
+                    <a class="btn primary" href="mailto:contato.nathansas@gmail.com">Enviar e-mail</a>
+                </div>
+            </div>
+            <div class="photo">
+                <img src="imagens/imagem.jpeg" alt="Foto de Nathan de Souza Albino da Silva">
+            </div>
+        </header>
+
+        <main>
+            <section id="experiencia" class="section-grid">
+                <h2>Experiência profissional</h2>
+                <div class="entries">
+                    <div class="item">
+                        <h3>Estagiário</h3>
+                        <div class="sub">
+                            <p class="meta"><strong>Energy Shop Brasil</strong> · <span class="period">08/2026 - Atualmente</span></p>
+                            <ul>
+                                <li>Área de SEO e Inbound de E-commerce.</li>
+                            </ul>
+                        </div>
+                        <div class="sub">
+                            <p class="meta"><strong>Prefeitura Municipal de Palhoça</strong> · <span class="period">08/2022 - 01/2024</span></p>
+                            <ul>
+                                <li>Atendimento presencial no setor de protocolo da Secretaria da Receita.</li>
+                                <li>Abertura de Processo Administrativo em atendimento aos munícipes.</li>
+                                <li>Atendimento telefônico e on-line, recebendo demandas, encaminhando documentos e esclarecendo as principais dúvidas dos munícipes.</li>
+                                <li>Apoio à equipe na realização de tarefas diversas conforme a demanda.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <h3>Jovem Aprendiz</h3>
+                        <p class="meta"><strong>Intelbras</strong> · <span class="period">04/2025 - 06/2026</span></p>
+                        <ul>
+                            <li>Criação de planilhas e relatórios semanais.</li>
+                            <li>Administração de atividades voltadas à logística, acompanhando coletas e gerindo mercadorias apreendidas.</li>
+                            <li>Curso Jovem Aprendiz - Assistente Administrativo no SENAI.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="formacao" class="section-grid">
+                <h2>Formação acadêmica</h2>
+                <div class="entries">
+                    <div class="item">
+                        <h3>Tecnologia em Análise e Desenvolvimento de Sistemas (ADS)</h3>
+                        <p class="meta"><strong>Faculdade Municipal de Palhoça</strong> · <span class="period">07/2026 - Cursando</span></p>
+                    </div>
+                    <div class="item">
+                        <h3>Comunicação Visual</h3>
+                        <p class="meta"><strong>IFSC Câmpus Palhoça Bilíngue</strong> · Curso Integrado no Ensino Médio · <span class="period">09/2021 - 07/2025</span></p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer id="contato">
+            <h2>Contato</h2>
+            <ul class="contact-list">
+                <li><span>E-mail</span><a href="mailto:contato.nathansas@gmail.com">contato.nathansas@gmail.com</a></li>
+                <li><span>Telefone</span><a href="tel:+5548991370134">(48) 99137-0134</a></li>
+                <li><span>LinkedIn</span><a href="https://linkedin.com/in/nathanalbino" target="_blank" rel="noopener">linkedin.com/in/nathanalbino</a></li>
+                <li><span>GitHub</span><a href="https://github.com/meninonate" target="_blank" rel="noopener">github.com/meninonate</a></li>
+            </ul>
+            <p class="copy">Nathan de Souza Albino da Silva</p>
+        </footer>
+    </div>
+</body>
+</html>
